@@ -1,6 +1,4 @@
-// ============================================
-// FUNCIÓN 1: Cambiar tema (modo oscuro/claro)
-// ============================================
+
 function cambiarTema() {
   const body = document.body;
   const btn = document.getElementById('btn-tema');
@@ -14,9 +12,7 @@ function cambiarTema() {
   }
 }
 
-// ============================================
-// FUNCIÓN 2: Mostrar/ocultar más información
-// ============================================
+
 function mostrarMasInfo() {
   const panel = document.getElementById('mas-info');
   const btn = document.getElementById('btn-mas-info');
@@ -24,7 +20,7 @@ function mostrarMasInfo() {
   if (panel.style.display === 'none' || panel.style.display === '') {
     panel.style.display = 'block';
 
-    // Animación de entrada suave
+    
     panel.style.opacity = '0';
     panel.style.transition = 'opacity 0.4s ease';
     setTimeout(() => {
@@ -38,9 +34,7 @@ function mostrarMasInfo() {
   }
 }
 
-// ============================================
-// FUNCIÓN 3: Animación de bienvenida al cargar
-// ============================================
+
 window.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('header h1');
   header.style.opacity = '0';
